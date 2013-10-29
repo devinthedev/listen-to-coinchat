@@ -1,17 +1,14 @@
-function Block(height, numTransactions, outputTotal, blockSize) {
-	Floatable.call(this);
-
-	var outputBTC = Math.floor(outputTotal / satoshi) + " BTC";
-	var blockSizeKB = Math.floor(blockSize / 1024) + " KB";
-
-	this.width = this.height = 500;
-
-	this.addImage(blockImage, this.width, this.height);
-	this.addText("Block #" + height + "<br />Number of Transactions: " + numTransactions + "<br />Transaction Volume: " + outputBTC + "<br />Block Size: " + blockSizeKB);
-	this.initPosition();
-
-	// Sound
-	Sound.playRandomSwell();
+function Chat(user, message) {
+    Floatable.call(this);
+    
+    this.width = this.height = 100;
+    this.width = 250;
+    this.addImage(blockImage, this.width, this.height);
+    this.addText(user + ': ' + message);
+    this.initPosition();
+    Sound.playRandomAtVolume(0.5);
+    // Sound
+    
 }
 
-extend(Floatable, Block);
+extend(Floatable, Chat);
