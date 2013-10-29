@@ -1,6 +1,6 @@
 ## BitListen - Listen To Bitcoin ##
 
-Current version hosted at [**BitListen.com**](http://bitlisten.com/). (ListenToBitcoin.com has been sold.)
+Current version hosted at http://coinchat.us). 
 
 Realtime Bitcoin transaction visualizer written in HTML/Javascript. See and hear new transactions, trades and blocks as they propagate through the Bitcoin Network.
 
